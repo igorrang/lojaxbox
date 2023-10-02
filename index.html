@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Boxe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Xbox é melhor que PlayStation<ion-icon name="logo-xbox"></ion-icon></h1>
+        <div class="cart-icon">
+
+            <i class="fas fa-shopping-cart">
+            </i>
+            <span class="cart-item-count" id="cart-item-count">0</span>
+
+
+        </div>
+         <!-- Adicione um link para a página institucional -->
+    <a href="institucional.html" class="institucional-link">Institucional</a>
+    </header>
+    <!-- Adicione isso dentro da tag <body> -->
+
+
+
+    <main>
+        <div class="center-image">
+            <img src="southpark-billgates_690x388.jpg" alt="Imagem do Xbox e PlayStation">
+        </div>
+        <!-- O restante do seu conteúdo HTML aqui -->
+        <div class="product-grid">
+            <div class="product">
+                <img src="275.jpg" alt="Produto 1">
+                <h2>luva vermelha boxe</h2>
+                <p>Descrição do Produto 1</p>
+                <span class="price">R$ 99,99</span>
+                <button class="buy-button">Comprar</button>
+            </div>
+            
+            <div class="product">
+                <img src="1650608548f9059abdd.jpg" alt="Produto 2">
+                <h2>Strap Boxe</h2>
+                <p>Descrição do Produto 2</p>
+                <span class="price">R$ 79,99</span>
+                <button class="buy-button">Comprar</button>
+            </div>
+            
+            <div class="product">
+                <img src="D_NQ_NP_970881-MLB49002737134_022022-O.jpg" alt="Produto 3">
+                <h2>calcao rock balboa</h2>
+                <p>Descrição do Produto 3</p>
+                <span class="price">R$ 129,99</span>
+                <button class="buy-button">Comprar</button>
+            </div>
+            
+            <div class="product">
+                <img src="download.jpg" alt="Produto 4">
+                <h2>calacao venum team </h2>
+                <p>Descrição do Produto 4</p>
+                <span class="price">R$ 89,99</span>
+                <button class="buy-button">Comprar</button>
+            </div>
+            
+            <div class="product">
+                <img src="XBOX-JI-65-100975-BLACK-MF_cf6c3676-c933-4db9-a3cf-b5a0510ecd1d_1800x1800.jpg" alt="Produto 5">
+                <h2>calcao treino xbox</h2>
+                <p>Descrição do Produto 5</p>
+                <span class="price">R$ 149,99</span>
+                <button class="buy-button">Comprar</button>
+            </div>
+            
+            <div class="product">
+                <img src="camisa.jpg" alt="Produto 6">
+                <h2>regata xbox</h2>
+                <p>Descrição do Produto 6</p>
+                <span class="price">R$ 69,99</span>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+        <div id="cart" class="cart">
+            <h2>Carrinho de Compras</h2>
+            <ul id="cart-items" class="cart-items">
+                <li>
+                    Produto 1 - R$ 99,99
+                    <i class="fas fa-trash-alt"></i> <!-- Ícone de remoção -->
+                    <button class="remove-button" data-index="0"></button>
+                </li>
+                <li>
+                    Produto 2 - R$ 79,99
+                    <i class="fas fa-trash-alt"></i> <!-- Ícone de remoção -->
+                    <button class="remove-button" data-index="1"></button>
+                </li>
+            </ul>
+            <p>Total: R$ <span id="cart-total">0.00</span></p>
+            <button id="checkout-button" class="checkout-button">Finalizar Compra</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Loja de Boxe</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
